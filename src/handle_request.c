@@ -403,7 +403,11 @@ char *handle_method(int *response_size, RequestHeader req_header) {
             .content_length = 0
         };
 
-        char *_attack = "<h1>KAMU MENCOBA MEMBOBOL SERVER YA? HAYOOO!!!</h1>";
+        char *_attack = "<div style = \"padding: 10px; margin: 10px; border: 1px solid #ccc;text-align: center; background-color: maroon;color: white;\">"
+        "<h1>Kamu terdeteksi ingin membobol server!</h1>"
+        "<h2>Sistem ini telah dilengkapi dengan AI,</h2>"
+        "<h2>untuk menangkal serangan jahat dari kamu!</h2>"
+        "</div>";
         response = create_response(response_size, &res_header, _attack, strlen(_attack));
         return response;
     }
