@@ -408,6 +408,7 @@ char *handle_method(int *response_size, RequestHeader req_header) {
         "<h2>Sistem ini telah dilengkapi dengan AI,</h2>"
         "<h2>untuk menangkal serangan jahat dari kamu!</h2>"
         "</div>";
+        
         response = create_response(response_size, &res_header, _attack, strlen(_attack));
         return response;
     }
