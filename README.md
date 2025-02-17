@@ -24,11 +24,15 @@ sudo git clone https://github.com/ekoheri/halmos_honeypot.git halmos_honeypot
 
 cd halmos_honeypot
 
-4. Kompilasi dan install program
+4. Install library CURL
+
+sudo apt update && sudo apt install libcurl4-openssl-dev
+
+5. Kompilasi dan install program
 
 sudo make install
 
-5. Masuk ke folder bin dan jalankan program
+6. Masuk ke folder bin dan jalankan program
 
 cd bin
 
@@ -90,6 +94,8 @@ E. File LOG
 Aplikasi halmos_honeypot ini dilengkapi dengan file LOG, yang bisa anda akses pada folder /var/log/halmos_honeypot/. 
 1. Silahkan masuk ke folder tersebut
 
-cd /var/log/halmos_honeypot/. 
+cd /var/log/halmos_honeypot/
+
 2. Lalu silahkan anda lihat file log-nya
+
 ls- l
